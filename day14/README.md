@@ -54,7 +54,7 @@ View results in a web interface
 
 ---
 📸 Output Preview
-![App](Iris_flower_app.png)
+![App](iris_flower_app.png)
 
 ---
 Streamlit App
