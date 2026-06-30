@@ -76,3 +76,7 @@ The goal of this project is to:
     Learn Streamlit framework
     Build interactive Python web apps
     Apply Machine Learning in real-world UI
+
+## 🔗 Live Application
+You can view the live deployed application here: 
+👉 [Simple App(app.py)](https://srishti-innovative-internship-5pvck8atftdx57p6sgf9cr.streamlit.app/)
