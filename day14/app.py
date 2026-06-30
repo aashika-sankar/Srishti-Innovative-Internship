@@ -204,34 +204,32 @@ if st.button("🎯 Predict Species", type="primary", use_container_width=True):
     if model is not None and model_info is not None:
         try:
             # Make prediction
+            input_features = np.array([[sepal_length, sepal_width, petal_length, petal_width]])
             prediction = model.predict(input_features)
             prediction_proba = model.predict_proba(input_features)[0]
 
             # Get predicted class name
             predicted_class = model_info['target_names'][prediction[0]]
 
-            # Display results
-            st.markdown('<div class="prediction-card">', unsafe_allow_html=True)
-            st.markdown(f"### ��Prediction Result")
-            st.markdown(f"**Predicted Species:** **{predicted_class}**")
+            # Native container fixes the empty white box bug completely
+            with st.container(border=True):
+                st.markdown("### 🎯 Prediction Result")
+                st.success(f"**Predicted Species:** {predicted_class.upper()}")
 
-            # Show confidence scores with progress bars
-            st.markdown("### �� Confidence Scores")
-            for i, prob in enumerate(prediction_proba):
-                species = model_info['target_names'][i]
-                percentage = prob * 100
+                st.divider()
 
-                col_prog, col_text = st.columns([3, 1])
-                with col_prog:
-                    st.markdown(f"""
-                    <div class="confidence-bar">
-                        <div class="confidence-fill" style="width: {percentage}%;">
-                            {percentage:.1f}%
-                        </div>
-                    </div>
-                """, unsafe_allow_html=True)
-                with col_text:
-                    st.write(f"**{species}**")
+                st.markdown("### 📊 Confidence Scores")
+
+                for i, prob in enumerate(prediction_proba):
+                    species = model_info['target_names'][i]
+
+                    col1, col2 = st.columns([1,4])
+
+                    with col1:
+                        st.write(f"**{species.capitalize()}**")
+
+                    with col2:
+                        st.progress(float(prob), text=f"{prob*100:.1f}%")
 
             st.markdown('</div>', unsafe_allow_html=True)
 
@@ -239,7 +237,6 @@ if st.button("🎯 Predict Species", type="primary", use_container_width=True):
             st.error(f"❌ Error making prediction: {e}")
     else:
         st.error("❌ Model could not be loaded. Please check if the model files exist.")
-
 # Additional information
 with st.expander("📚 About the Iris Dataset"):
     st.markdown("""
