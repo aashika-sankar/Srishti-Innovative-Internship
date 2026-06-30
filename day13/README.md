@@ -8,11 +8,11 @@ The project demonstrates basic Streamlit UI components, widget usage, and a Mach
 ## 📁 Project Structure
 
 Day13/
-│── app.py # Basic Streamlit application
-│── app_fun.py # Streamlit widgets demonstration
-│── iris_app.py # Iris Flower Classification (ML model)
-│── requirements.txt
-│── README.md
+    │── app.py # Basic Streamlit application
+    │── app_fun.py # Streamlit widgets demonstration
+    │── iris_app.py # Iris Flower Classification (ML model)
+    │── requirements.txt
+    │── README.md
 
 ---
 
