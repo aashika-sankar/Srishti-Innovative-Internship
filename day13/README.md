@@ -80,3 +80,5 @@ The goal of this project is to:
 ## 🔗 Live Application
 You can view the live deployed application here: 
 👉 [Simple App(app.py)](https://srishti-innovative-internship-5pvck8atftdx57p6sgf9cr.streamlit.app/)
+👉 [Widgets Demo(app_fun.py)](https://srishti-innovative-internship-3savpseltyxwtn9mxakbmt.streamlit.app/)
+👉 [Iris App(iris_app.py)]
