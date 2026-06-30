@@ -55,3 +55,7 @@ View results in a web interface
 ---
 📸 Output Preview
 ![App](Iris_flower_app.png)
+
+---
+Streamlit App
+[![Iris Flower Classifier](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://srishti-innovative-internship-qkoohdhuybaenequpknk7j.streamlit.app/)
