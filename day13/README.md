@@ -14,7 +14,6 @@ Day13/
 │── requirements.txt
 │── README.md
 
-
 ---
 
 ## 📌 Applications Overview
@@ -49,7 +48,6 @@ Model trained using the classic Iris dataset.
 
 Install dependencies using:
 
-```bash
 pip install -r requirements.txt
 
 ▶️ How to Run
