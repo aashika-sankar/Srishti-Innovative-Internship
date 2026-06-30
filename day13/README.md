@@ -78,7 +78,11 @@ The goal of this project is to:
     Apply Machine Learning in real-world UI
 
 ## 🔗 Live Application
+
 You can view the live deployed application here: 
+
 👉 [Simple App(app.py)](https://srishti-innovative-internship-5pvck8atftdx57p6sgf9cr.streamlit.app/)
+
 👉 [Widgets Demo(app_fun.py)](https://srishti-innovative-internship-3savpseltyxwtn9mxakbmt.streamlit.app/)
-👉 [Iris App(iris_app.py)]
+
+👉 [Iris App(iris_app.py)](https://srishti-innovative-internship-b4nabre2ua8vvmp7ndi8qe.streamlit.app/)
