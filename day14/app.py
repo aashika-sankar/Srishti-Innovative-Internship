@@ -60,9 +60,9 @@ def load_model(format_type='joblib'):
     """Load the model from the specified format"""
     try:
         if format_type == 'joblib':
-            model = joblib.load('models/iris_model.joblib')
+            model = joblib.load('day14/models/iris_model.joblib')
         elif format_type == 'pickle':
-            with open('models/iris_model.pickle', 'rb') as f:
+            with open('day14/models/iris_model.pickle', 'rb') as f:
                 model = pickle.load(f)
         return model
     except Exception as e:
@@ -73,7 +73,7 @@ def load_model(format_type='joblib'):
 def load_model_info():
     """Load model metadata"""
     try:
-        with open('models/model_info.json', 'r') as f:
+        with open('day14/models/model_info.json', 'r') as f:
             return json.load(f)
     except Exception as e:
         st.error(f"Error loading model info: {e}")
@@ -83,7 +83,7 @@ def load_model_info():
 def load_feature_ranges():
     """Load feature ranges for sliders"""
     try:
-        with open('models/feature_ranges.json', 'r') as f:
+        with open('day14/models/feature_ranges.json', 'r') as f:
             return json.load(f)
     except:
         # Default ranges if file doesn't exist
